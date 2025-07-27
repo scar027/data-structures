@@ -1,0 +1,40 @@
+{
+        "version": 3,
+        "cmakeMinimumRequired": {
+                "major": 3,
+                "minor": 28,
+                "patch": 3
+        },
+        "configurePresets": [
+                {
+                        "name": "gcc",
+                        "displayName": "GCC",
+                        "description": "Strict warning flags for GCC builds",
+                        "generator": "Ninja",
+                        "binaryDir": "${sourceDir}/build",
+                        "cacheVariables": {
+                                "ENABLE_STRICT_FLAGS": "ON"
+                        }
+                },
+                {
+                        "name": "clang",
+                        "displayName": "Clang",
+                        "description": "Strict warning flags for Clang builds",
+                        "generator": "Ninja",
+                        "binaryDir": "${sourceDir}/build",
+                        "cacheVariables": {
+                                "ENABLE_STRICT_FLAGS": "ON"                  
+                        }
+                },
+                {
+                        "name": "msvc",
+                        "displayName": "MSVC",
+                        "description": "Strict warning flags for MSVC builds",
+                        "generator": "Ninja",
+                        "binaryDir": "${sourceDir}/build",
+                        "cacheVariables": {
+                                "ENABLE_STRICT_FLAGS": "ON"
+                        }
+                }
+        ]
+}
